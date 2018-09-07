@@ -1,9 +1,13 @@
+# /usr/local/bin/python
 # encoding definition
 """coding=utf-8"""
+
+
+# import packages
 from colorama import Fore, Back, Style
 
 
-# ChessBoard function definition
+# function definition
 def ChessBoard(userColumns, userRows):
     board = ''
     # index for control lines
@@ -42,6 +46,6 @@ while True:
     elif userColumns < 3 or userRows < 3:
         print(Back.RED + ' *** INPUT ERROR *** ' + Back.RESET + '\n' + Back.RED + ' Input value of Columns and Rows should not be less than 3 units. ' + Back.RESET)
     else:
-        # board outputs
+        # board output
         ChessBoard(userColumns, userRows)
         break
